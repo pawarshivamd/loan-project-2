@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family:"Jost",sans-serif;
+    background-color: #eee;
+}
+html{
+    font-size: 90.6%;
+}
+:root{
+    --theam-color:#1a4dbe;
+    --light-theam-color:#2c3655;
+    --secondary-color:#055c2d;
+    --white:#ffffff;
+    --black:#000000;
+    --dark-white:#dbdbdb;
+   --light-blue: #b0baf1;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+#side_nav{
+    min-width: 250px;   
+    max-width: 250px;  
+    transition: all ease-in-out 0.5s;
+}
+.sidebar{
+    background-color:var(--theam-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+    .ul-section{
+        padding-left: 20px;
+        li{
+            padding: 10px 5px;
+            a{
+                color: var(--dark-white);
+                font-size: 1.3rem;
+                &:hover{
+                    color: var(--white);
+                }
+            }
+        }
+        .my-loan-list{
+            ul{
+                padding-left: 20px;
+                li{
+                    padding: 5px 5px;
+                }
+            }
+        }
+        .dropdown{
+            .dropdown-toggle{
+
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+.content{
+   min-height: 100vh;
+   width: 100%;
+}
+
+
+.profile-section{
+    width: 100%;
+    display: flex;
+}
+.user-icon{
+    width: 20px !important;
+    // position: relative;
+    display: block;
+    float: left;
+    margin-right: 7px;
+}
+
+.navbar{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
+    .short-name{
+        background-color: var(--theam-color);
+    }
+}
+
+.loan-content-body{
+    .loan-card{
+        
+        margin: 10px;
+        // padding: 20px;
+        .loan-card-body{
+            min-height: 240px;
+            box-shadow: 0 12px 24px rgba(47,65,129,.1);
+            // border: 1px solid var(--light-blue);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+            .img-box{
+                width: min(100% - 10px , 70px);
+                margin-inline: auto;
+                height: 70px;
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width:767px) {
+    #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+
+    .profile-section{
+        width: auto;
+    }
+}
+
+
+
+@media (min-width:1500px) {
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1500px !important;
+    }
+  }
+  
+  @media (min-width:1400px) {
+  
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1400px !important;
+    }
+  }

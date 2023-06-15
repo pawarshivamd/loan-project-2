@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="asstes/css/style.css">
+</head>
+
+<body>
+    <div class="main-container d-flex container-fluid p-0">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box px-2 pt-3 pb-4 justify-content-between d-flex">
+                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow mw-2">MY</span><span
+                        class="text-white">My Account</span> </h1>
+                <button class="btn d-md-none close-btn px-1 py-0 text-white">
+                    <i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="list-unstyled ul-section ">
+
+                <li class="dropdown my-loan-list ">
+                    <div class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <a href="#" class=" "> My Loan</a>
+                    </div>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">pending</a></li>
+                            <li><a class="dropdown-item" href="#">Approved</a></li>
+                            <li><a class="dropdown-item" href="#">Rejected</a></li>
+                          </ul> -->
+
+                    <ul class="">
+                        <li class=""><a class="" href="#">pending</a></li>
+                        <li class=""><a class="" href="#">Approved</a></li>
+                        <li class=""><a class="" href="#">Rejected</a></li>
+                    </ul>
+                </li>
+
+                <li class=""><a href="#" class="d-block ">Apply for new loan</a></li>
+                <li class=""><a href="#" class="d-block ">Change Password</a></li>
+                <li class=""><a href="#" class="d-block ">Log Out</a></li>
+            </ul>
+
+        </div>
+
+        <!-- sidebar End -->
+
+        <div class="content">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
+                        <a class="navbar-brand fs-4" href="#"><span
+                                class=" rounded px-2 py-0 text-white short-name">MY</span> </a>
+                    </div>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                    <div class="profile-section">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link active " aria-current="page" href="#">Profile <div class="user-icon">
+                                        <img src="asstes/img/user.png" alt=""></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+
+
+            <div class="loan-content-body">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>12</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/aplication.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3> Total Loan Aplication</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>5</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/loan-approval.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3> Total Approve Loan</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>546351</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/loan.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>Total Amount of Loan</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>2</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/test.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>Total Pending Loan</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>1232</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/cashbak.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>Cashback</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="loan-card">
+                                <div class="loan-card-body">
+                                    <div class="d-flex mb-5">
+
+
+                                        <div class="col-8">
+                                            <h2>9787</h2>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="img-box">
+
+                                                <img src="asstes/img/refer.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>Refer & Earn</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var openBtn = document.querySelector('.open-btn');
+            var closeBtn = document.querySelector('.close-btn');
+            var sidebar = document.querySelector('.sidebar');
+
+            openBtn.addEventListener('click', function () {
+                sidebar.classList.add('active');
+            });
+
+            closeBtn.addEventListener('click', function () {
+                sidebar.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
