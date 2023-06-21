@@ -130,7 +130,7 @@ button {
             display: flex;
             justify-content: space-between;
             background-color: var(--dark-bule);
-
+            align-items: center;
         h1 {
             display: flex;
             align-items: center;
@@ -140,6 +140,10 @@ button {
                 float: left;
                 width: 70px;
             }
+        }
+        .close-btn{
+            margin-right: 10px;
+            color: var(--white);
         }
     }
 
@@ -249,7 +253,7 @@ button {
         gap: 20px;
 
         .card {
-            width: 150px;
+            width: 157px;
             padding: 10px;
             // background-color: #000000;
             border: none;
@@ -285,7 +289,21 @@ button {
             color: var(--theam-color);
             font-weight: 600;
             margin: 20px 0;
-
+            span{
+                position: relative;
+                // font-size: 26px;
+                z-index: 0;
+                &::before{
+                    content: "";
+                    min-width: 220px;
+                    height: 12px;
+                    position: absolute;
+                    background: #CDDCFE;
+                    border-radius: 16px 16px 5px 5px;
+                    bottom: 3px;
+                    z-index: -1;
+                }
+            }
         }
 
         .btn-section {

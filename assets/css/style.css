@@ -123,6 +123,7 @@ button {
   display: flex;
   justify-content: space-between;
   background-color: var(--dark-bule);
+  align-items: center;
 }
 .sidebar .header-box h1 {
   display: flex;
@@ -132,6 +133,10 @@ button {
   display: block;
   float: left;
   width: 70px;
+}
+.sidebar .header-box .close-btn {
+  margin-right: 10px;
+  color: var(--white);
 }
 .sidebar .ul-section {
   margin-top: 50px;
@@ -217,7 +222,7 @@ button {
   gap: 20px;
 }
 .loan-content-body .card-setion .card {
-  width: 150px;
+  width: 157px;
   padding: 10px;
   border: none;
 }
@@ -244,6 +249,20 @@ button {
   color: var(--theam-color);
   font-weight: 600;
   margin: 20px 0;
+}
+.loan-content-body .loan-section-table .text-head span {
+  position: relative;
+  z-index: 0;
+}
+.loan-content-body .loan-section-table .text-head span::before {
+  content: "";
+  min-width: 220px;
+  height: 12px;
+  position: absolute;
+  background: #CDDCFE;
+  border-radius: 16px 16px 5px 5px;
+  bottom: 3px;
+  z-index: -1;
 }
 .loan-content-body .loan-section-table .btn-section {
   display: flex;
