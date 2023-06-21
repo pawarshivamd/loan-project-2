@@ -10,44 +10,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- bootstrap link -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="asstes/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="main-container d-flex container-fluid p-0">
         <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 pt-3 pb-4 justify-content-between d-flex">
-                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow mw-2">MY</span><span
-                        class="text-white">My Account</span> </h1>
+            <div class="header-box ">
+                <h1 class="fs-4"><span class="img-box"> <img src="assets/img/logo.png" alt=""></span>
+                    <span class="text-white">Loan Bazaar</span> </h1>
                 <button class="btn d-md-none close-btn px-1 py-0 text-white">
                     <i class="fa-solid fa-xmark"></i></button>
             </div>
-            <ul class="list-unstyled ul-section ">
-
-                <li class="dropdown my-loan-list ">
-                    <div class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <a href="#" class=" "> My Loan</a>
-                    </div>
-                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">pending</a></li>
-                            <li><a class="dropdown-item" href="#">Approved</a></li>
-                            <li><a class="dropdown-item" href="#">Rejected</a></li>
-                          </ul> -->
-
-                    <ul class="">
-                        <li class=""><a class="" href="#">pending</a></li>
-                        <li class=""><a class="" href="#">Approved</a></li>
-                        <li class=""><a class="" href="#">Rejected</a></li>
-                    </ul>
+            <ul class=" ul-section  top ">
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bxs-dashboard' ></i>
+                        <span class="text">Dashboard</span>
+                    </a>
                 </li>
-
-                <li class=""><a href="#" class="d-block ">Apply for new loan</a></li>
-                <li class=""><a href="#" class="d-block ">Change Password</a></li>
-                <li class=""><a href="#" class="d-block ">Log Out</a></li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-notepad'></i>
+                        <span class="text">My Loan</span>
+                    </a>
+    
+                    <ul class="my-loan-list">
+                        <li>
+                            <a href="#">
+                                <span class="text">Pending </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Approved</a>
+                        </li>
+                        <li>
+                            <a href="#">Rejected</a>
+                        </li>
+                    </ul>
+    
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <i class='bx bx-dollar-circle'></i>
+                        <span class="text">Cashback
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-message-dots' ></i>
+                        <span class="text">Earn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle'></i>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="text">New Loan Request</span>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -55,24 +90,33 @@
         <!-- sidebar End -->
 
         <div class="content">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <div class="container-fluid">
-                    <div class="d-flex justify-content-between d-md-none d-block">
-                        <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
-                        <a class="navbar-brand fs-4" href="#"><span
-                                class=" rounded px-2 py-0 text-white short-name">MY</span> </a>
+            <nav class="navbar navbar-expand-md  sticky-top">
+                <div class="container">
+            
+            
+                    <div class="col-3 d-flex justify-content-between d-block d-md-none ">
+                        <div class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></div>
                     </div>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button> -->
-                    <div class="profile-section">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item ">
-                                <a class="nav-link active " aria-current="page" href="#">Profile <div class="user-icon">
-                                        <img src="asstes/img/user.png" alt=""></div></a>
+            
+                    <div class="profile-section ">
+                        <ul class="navbar-nav ms-auto ">
+
+                            <li>
+                                <div class="dropdown">
+            
+                                    <div class="dropdown-toggle user-dropdown" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <div class="user-icon"><img src="assets/img/user.png" alt=""> </div> Mr.Persons Name
+                                    </div>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
+            
                 </div>
             </nav>
             <!-- navbar end -->
@@ -80,147 +124,138 @@
 
             <div class="loan-content-body">
                 <div class="container">
-                    <div class="row ">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
 
-
-                                        <div class="col-8">
-                                            <h2>12</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/aplication.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3> Total Loan Aplication</h3>
-                                    </div>
-                                </div>
-                            </div>
+               
+                <div class="card-setion">
+                    <div class="card" style="background-color: #CCDBFD;">
+                        <div class="img-box">
+    
+                            <img src="assets/img/aplication.png" alt="">
                         </div>
-                        <!-- 2 -->
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
-
-
-                                        <div class="col-8">
-                                            <h2>5</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/loan-approval.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3> Total Approve Loan</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Total Loan Application</h3>
+                        <p class="text-end">10</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card" style="background-color: #C7F9CC;">
+                        <div class="img-box ">
+    
+                            <img src="assets/img/loan-approval.png" alt="">
                         </div>
-                        <!-- 3 -->
-
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
-
-
-                                        <div class="col-8">
-                                            <h2>2</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/test.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>Total Pending Loan</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Total Approve Loan</h3>
+                        <p class="text-end">03</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card" style="background-color: #CCEEFC;">
+                        <div class="img-box">
+    
+                            <img src="assets/img/pending.png" alt="">
                         </div>
-                        <!-- 4 -->
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
-
-
-                                        <div class="col-8">
-                                            <h2>546351</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/loan.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>Total Amount of Loan</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Total Pending Loan</h3>
+                        <p class="text-end">03</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="card" style="background-color: #BEE3DB;">
+                        <div class="img-box">
+    
+                            <img src="assets/img/loan.png" alt="">
                         </div>
-                        <!-- 5 -->
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
-
-
-                                        <div class="col-8">
-                                            <h2>1232</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/cashbak.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>Cashback</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Total Amount Of Loan</h3>
+                        <p class="text-end">₹ 5,00,000</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card" style="background-color: #1BC6FB;">
+                        <div class="img-box">
+    
+                            <img src="assets/img/cashbak.png" alt="">
                         </div>
-                        <!-- 6 -->
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="loan-card">
-                                <div class="loan-card-body">
-                                    <div class="d-flex mb-5">
-
-
-                                        <div class="col-8">
-                                            <h2>9787</h2>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="img-box">
-
-                                                <img src="asstes/img/refer.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>Refer & Earn</h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Cashback</h3>
+                        <p class="text-end mt-4">₹ 2500</p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="card" style="background-color: #ABBCEE;">
+                        <div class="img-box">
+    
+                            <img src="assets/img/refer.png" alt="">
+                        </div>
+                        <h3>Refer & Earn</h3>
+                        <p class="text-end mt-4">₹ 3900</p>
+                    </div>
+                </div>
+            
+            <div class="loan-section-table">
+                <div class="row">
+                    <div class="col-md-12  ">
+                        <h3 class="text-head"> Latest Application </h3>
+                        <div class="table-responsive">
+                            <table class="table align-td-middle table-card">
+                                <thead>
+                                <tr>
+                                    <th >No.</th>
+                                    <th>Application Nuber</th>
+                                    <th>Bank/NBFC</th>
+                                    <th>Amount (₹)</th>
+                                    <th>Status</th>
+                                    <th>View</th>
+                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                       <td>1</td>
+                                        <td> - </td>
+                                        <td> - </td>
+                                        <td>500000</td>
+                                        <td><span class="all-btn Pending-btn">Pending</span></td>
+                                        <td><i class="fa-regular fa-eye"></i></td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>2</td>
+                                        <td>vfok65c9</td>
+                                        <td>Bajaj</td>
+                                        <td>400000</td>
+                                        <td><span class="all-btn Accepted-btn">Accepted</span> </td>
+                                        <td><i class="fa-regular fa-eye"></i></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>bcvsk45c7</td>
+                                        <td>HDFC</td>
+                                        <td>300000</td>
+                                        <td><span class="all-btn Process-btn"> Process</span> </td>
+                                        <td><i class="fa-regular fa-eye"></i></td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>4</td>
+                                        <td>bvvk4re4</td>
+                                        <td>HDFC</td>
+                                        <td>200000</td>
+                                        <td><span class="all-btn Approved-btn">Approved</span> </td>
+                                        <td><i class="fa-regular fa-eye"></i></td>
+                                        
+    
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>bvvk4re4</td>
+                                        <td>Bajaj</td>
+                                        <td>100000</td>
+                                        <td ><span class="all-btn Rejected-btn">Rejected </span> </td>
+                                        <td><i class="fa-regular fa-eye"></i></td>
+                                    </tr>
+    
+                                    </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-section">
+                            <button class="view-btn">View More</button>
                         </div>
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -228,22 +263,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var openBtn = document.querySelector('.open-btn');
-            var closeBtn = document.querySelector('.close-btn');
-            var sidebar = document.querySelector('.sidebar');
-
-            openBtn.addEventListener('click', function () {
-                sidebar.classList.add('active');
-            });
-
-            closeBtn.addEventListener('click', function () {
-                sidebar.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
