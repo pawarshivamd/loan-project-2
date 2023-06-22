@@ -315,6 +315,19 @@ button {
                     z-index: -1;
                 }
             }
+            .cashback{
+                &::before{
+                    content: "";
+                    min-width: 120px !important;
+                }
+            }
+            .Refer{
+                &::before{
+                    content: "";
+                    min-width: 150px !important;
+                }   
+            }
+
         }
         .form button {
             border: none;

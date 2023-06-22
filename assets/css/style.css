@@ -284,6 +284,14 @@ button {
   bottom: 3px;
   z-index: -1;
 }
+.loan-content-body .loan-section-table .text-head .cashback::before {
+  content: "";
+  min-width: 120px !important;
+}
+.loan-content-body .loan-section-table .text-head .Refer::before {
+  content: "";
+  min-width: 150px !important;
+}
 .loan-content-body .loan-section-table .form button {
   border: none;
   background: none;
