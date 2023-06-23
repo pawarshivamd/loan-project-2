@@ -343,7 +343,7 @@ button {
         gap: 20px;
 
         .card {
-            width: 157px;
+            width: 156px;
             padding: 10px;
             // background-color: #000000;
             border: none;
@@ -618,6 +618,7 @@ button {
         label {
             color: var(--light-theam-colo);
             margin-bottom: 5px;
+            font-weight: 600;
         }
 
         input::-webkit-outer-spin-button,
