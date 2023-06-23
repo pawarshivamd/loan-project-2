@@ -637,7 +637,7 @@ button {
   }
   .loan-content-body .loan-section-table .text-head span::before {
     content: "";
-    min-width: 200px;
+    min-width: 182px;
   }
   .loan-content-body .loan-section-table .text-head .cashback::before {
     content: "";
