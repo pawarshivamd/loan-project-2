@@ -346,6 +346,14 @@ button {
   content: "";
   min-width: 150px !important;
 }
+.loan-content-body .loan-section-table .text-head .approved-loan::before {
+  content: "";
+  min-width: 240px !important;
+}
+.loan-content-body .loan-section-table .text-head .Rejected-loan::before {
+  content: "";
+  min-width: 230px !important;
+}
 .loan-content-body .loan-section-table .form button {
   border: none;
   background: none;
@@ -601,7 +609,7 @@ button {
     margin-top: 20px;
   }
   .profile-page-section .form {
-    width: min(100% - 20px, 80%);
+    width: min(100% - 20px, 90%);
     margin-inline: auto;
     box-shadow: 0 8px 30px -7px #c9dff0;
     border-radius: 10px;
@@ -626,6 +634,30 @@ button {
   }
   .loan-content-body .card-setion .card {
     width: 285px !important;
+  }
+  .loan-content-body .loan-section-table .text-head span::before {
+    content: "";
+    min-width: 200px;
+  }
+  .loan-content-body .loan-section-table .text-head .cashback::before {
+    content: "";
+    min-width: 100px !important;
+  }
+  .loan-content-body .loan-section-table .text-head .Refer::before {
+    content: "";
+    min-width: 131px !important;
+  }
+  .loan-content-body .loan-section-table .text-head .approved-loan::before {
+    content: "";
+    min-width: 204px !important;
+  }
+  .loan-content-body .loan-section-table .text-head .Rejected-loan::before {
+    content: "";
+    min-width: 192px !important;
+  }
+  .loan-content-body .loan-section-table .text-head .Pending-loan::before {
+    content: "";
+    min-width: 192px !important;
   }
 }
 @media (min-width: 1500px) {

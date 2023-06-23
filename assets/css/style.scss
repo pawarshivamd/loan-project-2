@@ -260,7 +260,7 @@ button {
                 color: var(--white);
                 white-space: nowrap;
                 overflow-x: hidden;
-                ;
+                
 
 
                 transition: width .3s ease;
@@ -410,6 +410,19 @@ button {
                     min-width: 150px !important;
                 }
             }
+            .approved-loan{
+                &::before {
+                    content: "";
+                    min-width: 240px !important;
+                }
+            }
+            .Rejected-loan{
+                &::before {
+                    content: "";
+                    min-width: 230px !important;
+                }
+            }
+
 
         }
 
@@ -744,7 +757,7 @@ button {
         margin-top: 20px;
 
         .form {
-            width: min(100% - 20px, 80%);
+            width: min(100% - 20px, 90%);
             margin-inline: auto;
             box-shadow: 0 8px 30px -7px #c9dff0;
             border-radius: 10px;
@@ -777,7 +790,49 @@ button {
             width: 285px !important;
         }
     }
+    .loan-content-body .loan-section-table {
+        .text-head {
+            span {
+                &::before {
+                    content: "";
+                    min-width: 200px;
+                }
+            }
 
+            .cashback {
+                &::before {
+                    content: "";
+                    min-width: 100px !important;
+                }
+            }
+
+            .Refer {
+                &::before {
+                    content: "";
+                    min-width: 131px !important;
+                }
+            }
+            .approved-loan{
+                &::before {
+                    content: "";
+                    min-width: 204px !important;
+                }
+            }
+            .Rejected-loan{
+                &::before {
+                    content: "";
+                    min-width: 192px !important;
+                }
+            }
+            .Pending-loan{
+                &::before {
+                    content: "";
+                    min-width: 192px !important;
+                }
+            }
+
+        }
+    }
 
 }
 
