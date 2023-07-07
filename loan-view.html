@@ -33,7 +33,7 @@
                 </div>
             </div>
             <ul class=" ul-section  top ">
-                <li >
+                <li>
                     <a href="index.html" class="link-box">
                         <i class='bx bxs-dashboard'></i>
                         <span class="text">Dashboard</span>
@@ -109,7 +109,8 @@
 
                                     <div class="dropdown-toggle user-dropdown" type="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <div class="user-icon"><img src="assets/img/user.png" alt=""> </div> Mr.Jignesh Patel
+                                        <div class="user-icon"><img src="assets/img/user.png" alt=""> </div> Mr.Jignesh
+                                        Patel
                                     </div>
                                     <ul class="dropdown-menu ">
                                         <li><a class="dropdown-item" href="Profile.html">View profile</a></li>
@@ -132,261 +133,300 @@
                         <div class="nav-link  active" id="nav-profile-b-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
                             aria-selected="true">
-                           Loan Profile Details</div>
+                            Loan Profile Details</div>
                         <div class="nav-link" id="nav-kyc-tab" data-bs-toggle="tab" data-bs-target="#nav-kyc"
-                            type="button" role="tab" aria-controls="nav-kyc" aria-selected="false">Loan KYC Details</div>
-
+                            type="button" role="tab" aria-controls="nav-kyc" aria-selected="false">Loan KYC Details
+                        </div>
+                        <div class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Comment</div>
                     </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
-                aria-labelledby="nav-profile-b-tab" tabindex="0">
-                    <form action="" class="form">
+                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-b-tab"
+                        tabindex="0">
+                        <form action="" class="form">
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <label for="first-name">Name</label>
-                                <input type="text" id="first-name" name="first-name" value="Jignesh Patel" required disabled>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <label for="loan-status">Loan Status</label>
-                                <input type="loan-status" id="loan-status" name="loan-status" value="Pending" required
-                                    disabled>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" value="jigneshp123@gmail.com" required disabled>
-                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <label for="first-name">Name</label>
+                                    <input type="text" id="first-name" name="first-name" value="Jignesh Patel" required
+                                        disabled>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <label for="loan-status">Loan Status</label>
+                                    <input type="loan-status" id="loan-status" name="loan-status" value="Pending"
+                                        required disabled>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" value="jigneshp123@gmail.com" required
+                                        disabled>
+                                </div>
 
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <label for="phone">Phone Number</label>
-                                <input type="number" id="phone" name="phone" value="9237781246" required disabled>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <label for="Loan-Amount">Loan Amount</label>
-                                <input type="number" id="Loan-Amount" name="begin" value="500000" disabled>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <div class="single-input">
-                                    <label for="name">Loan Type</label>
-                                    <select class="selectDrop form-select" aria-label="Default select example" disabled>
-                                        <option>Business Loan</option>
-                                        <option value="1">Personal Loan</option>
-                                        <option value="2">Home Loan</option>
-                                        <option value="3">Car Loan</option>
-                                    </select>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="number" id="phone" name="phone" value="9237781246" required disabled>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <label for="Loan-Amount">Loan Amount</label>
+                                    <input type="number" id="Loan-Amount" name="begin" value="500000" disabled>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <div class="single-input">
+                                        <label for="name">Loan Type</label>
+                                        <select class="selectDrop form-select" aria-label="Default select example"
+                                            disabled>
+                                            <option>Business Loan</option>
+                                            <option value="1">Personal Loan</option>
+                                            <option value="2">Home Loan</option>
+                                            <option value="3">Car Loan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <div class="single-input"><label for="phone">PAN Card</label>
+                                        <input type="text" id="phone" placeholder="ASDXXXX27M" required="" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <div class="single-input"><label for="state">State</label>
+                                        <input type="text" id="state" placeholder="California" required="" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <div class="single-input"><label for="term">Loan tenure</label>
+                                        <input type="text" id="term" placeholder=" 12 months" disabled>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <div class="single-input"><label for="phone">PAN Card</label>
-                                    <input type="text" id="phone" placeholder="ASDXXXX27M" required="" disabled>
-                                </div>
+                            <div class="btn-section">
+                                <button class="profile-btn me-3">Edit</button>
+                                <button class="profile-btn">Save</button>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <div class="single-input"><label for="state">State</label>
-                                    <input type="text" id="state" placeholder="California" required="" disabled>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                <div class="single-input"><label for="term">Loan tenure</label>
-                                    <input type="text" id="term" placeholder=" 12 months" disabled>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-section">
-                            <button class="profile-btn me-3">Edit</button>
-                            <button class="profile-btn">Save</button>
-                        </div>
                         </form>
                     </div>
-                            <!-- tab 2 -->
-                            <div class="tab-pane fade kyc-details" id="nav-kyc" role="tabpanel"
-                                aria-labelledby="nav-kyc-tab" tabindex="0">
-                                <form action="" class="form">
-                                <div class="row">
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>Business Proof</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
+                    <!-- tab 2 -->
+                    <div class="tab-pane fade kyc-details" id="nav-kyc" role="tabpanel" aria-labelledby="nav-kyc-tab"
+                        tabindex="0">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>Business Proof</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
                                     </div>
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>GST certi or MSME</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
 
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
                                             </div>
-                                            <i class="fa-solid fa-xmark"></i>
                                         </div>
-
+                                        <i class="fa-solid fa-xmark"></i>
                                     </div>
-                                    <!-- 3 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>PAN Card</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
 
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
-                                    <!-- 4 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>Adhar Card</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
-                                    <!-- 5 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>Light Bill</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
-                                    <!-- 6 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>Car Quotation</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
-                                    <!-- 7 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>3 year ITR</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
-                                    <!-- 8 -->
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
-                                        <h4>1 Year Bank Statement</h4>
-                                        <div class="input-box ">
-                                            <input type="file" class="upload-box" name='files[]' multiple disabled>
-                                            <i class="fa-solid fa-xmark"></i>
-
-                                        </div>
-                                        <div class="d-flex justify-content-evenly align-items-end my-2">
-
-                                            <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
-                                            <div style="width: 80%;">
-                                                <p class="m-0">sdasdsada.pdf</p>
-                                                <div class="progress" role="progressbar" aria-label="Basic example"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                                                    <div class="progress-bar" style="width: 100%;"></div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-
-                                    </div>
                                 </div>
-                                <div class="btn-section">
-                                    <button class="profile-btn me-3">Edit</button>
-                                    <button class="profile-btn">Save</button>
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>GST certi or MSME</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 3 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>PAN Card</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 4 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>Adhar Card</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 5 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>Light Bill</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 6 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>Car Quotation</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 7 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>3 year ITR</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <!-- 8 -->
+                                <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+                                    <h4>1 Year Bank Statement</h4>
+                                    <div class="input-box ">
+                                        <input type="file" class="upload-box" name='files[]' multiple disabled>
+                                        <i class="fa-solid fa-xmark"></i>
+
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-end my-2">
+
+                                        <i class='bx bxs-file-doc' style="font-size: 20px;"></i>
+                                        <div style="width: 80%;">
+                                            <p class="m-0">sdasdsada.pdf</p>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 6px;">
+                                                <div class="progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
                                 </div>
                             </div>
-                       
-                    </form>
-               
-            </div>
+                            <div class="btn-section">
+                                <button class="profile-btn me-3">Edit</button>
+                                <button class="profile-btn">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- tab 3 -->
+                    <div class="tab-pane fade " id="nav-contact" role="tabpanel"
+                        aria-labelledby="nav-contact-tab" tabindex="0">
+                        <div class="form">
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <div class="chat-timeline"><span>Today</span></div>
+                                        <div class="chat-item is-you">
+                                            <time class="chat-time">10:53</time>
+                                            <p class="chat-message">Hi, Mark! I made a new design for Messenger App.</p>
+                                        </div>
+                                        <div class="chat-item is-me">
+                                            <time class="chat-time">10:57</time>
+                                            <p class="chat-message">Yo! Send it to my assistant and we'll review it
+                                                during the year.</p>
+                                        </div>
+                                        <div class="chat-item is-you">
+                                            <time class="chat-time">11:30</time>
+                                            <p class="chat-message">But Mark...</p>
+                                        </div>
+                                        <form class="chat-form">
+                                            <input class="chat-form-input" type="text"
+                                                placeholder="Enter your message" /> <a href="#" class="audio-btn"><i class="fa-solid fa-microphone"></i></a> <a class="send-button" href=""><i class="fa-solid fa-paper-plane"></i></a>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- model -->
                 <div class="modal model-card fade" id="staticBackdrop" data-bs-backdrop="static"
                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

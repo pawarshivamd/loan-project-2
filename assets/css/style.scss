@@ -85,6 +85,9 @@ html {
 .Accepted-btn {
     background-color: #0050B8;
 }
+.Query-btn{
+    background-color: #ff4500;
+}
 
 img {
     width: 100%;
@@ -260,7 +263,7 @@ button {
                 color: var(--white);
                 white-space: nowrap;
                 overflow-x: hidden;
-                
+
 
 
                 transition: width .3s ease;
@@ -617,6 +620,119 @@ button {
         font-size: 1.3rem;
     }
 
+.chat-body{
+
+
+    .chat-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .chat-timeline {
+        text-align: center;
+        padding: 20px 0 10px 0;
+
+        span {
+            background: #ffffff;
+            color: #dddddd;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0 10px;
+            position: relative;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        &::after {
+            background: #dddddd;
+            content: "";
+            display: block;
+            height: 1px;
+            position: relative;
+            top: -10px;
+        }
+
+    }
+
+    .chat-time {
+        display: block;
+        color: #b1b6ba;
+        padding: 0;
+        margin: 0 0 5px;
+    }
+
+    .chat-message {
+        border-radius: 4px;
+        margin: 0 0 20px;
+        max-width: 50%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .is-you>.chat-message:before {
+        border-left: 5px solid transparent;
+        border-top: 5px solid #e6edf6;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: -5px;
+    }
+
+    .is-you>.chat-message {
+        background: #e6edf6;
+    }
+
+    .is-me>.chat-time {
+        text-align: right;
+    }
+
+    .is-me>.chat-message {
+        background: #f2f2f2;
+        float: right;
+    }
+    .chat-form{
+        border-top: 1px solid #dddddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        .chat-form-input {
+            border: none;
+            flex-grow: 1;
+            margin: 0;
+            box-shadow: none;
+            &:focus{
+                box-shadow: none;
+                border: none;
+                outline: none;
+            }
+        }
+        .send-button{
+            color: var(--light-blue);
+            font-size: 1.3rem;
+            margin-inline: 10px;
+            cursor: pointer;
+             &:hover{
+                color: var(--theam-color);
+            }
+        }
+        .audio-btn{
+            color: var(--light-blue);
+            font-size: 1.3rem;
+            margin-inline: 10px;
+            cursor: pointer;
+            &:hover{
+                color: var(--theam-color);
+            }
+        }
+    }
+}
     .form {
         width: min(100% - 20px, 80%);
         margin-inline: auto;
@@ -869,19 +985,22 @@ button {
                     min-width: 131px !important;
                 }
             }
-            .approved-loan{
+
+            .approved-loan {
                 &::before {
                     content: "";
                     min-width: 204px !important;
                 }
             }
-            .Rejected-loan{
+
+            .Rejected-loan {
                 &::before {
                     content: "";
                     min-width: 192px !important;
                 }
             }
-            .Pending-loan{
+
+            .Pending-loan {
                 &::before {
                     content: "";
                     min-width: 192px !important;
@@ -890,7 +1009,14 @@ button {
 
         }
     }
-
+        .chat-body {
+            .chat-message {
+                max-width: 90% !important;
+            }
+        }
+        .profile-page-section .nav-link {
+            font-size: 1rem;
+        }
 }
 
 
