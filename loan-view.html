@@ -137,12 +137,12 @@
                         <div class="nav-link" id="nav-kyc-tab" data-bs-toggle="tab" data-bs-target="#nav-kyc"
                             type="button" role="tab" aria-controls="nav-kyc" aria-selected="false">Loan KYC Details
                         </div>
-                        <div class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        <div class="nav-link " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                             type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Comment</div>
                     </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-b-tab"
+                    <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-b-tab"
                         tabindex="0">
                         <form action="" class="form">
 
@@ -399,32 +399,76 @@
                         </form>
                     </div>
                     <!-- tab 3 -->
-                    <div class="tab-pane fade " id="nav-contact" role="tabpanel"
+                    <div class="tab-pane fade show active" id="nav-contact" role="tabpanel"
                         aria-labelledby="nav-contact-tab" tabindex="0">
-                        <div class="form">
-                                <div class="chat-body">
-                                    <div class="chat-content">
-                                        <div class="chat-timeline"><span>Today</span></div>
-                                        <div class="chat-item is-you">
-                                            <time class="chat-time">10:53</time>
-                                            <p class="chat-message">Hi, Mark! I made a new design for Messenger App.</p>
+                        <div class="loan-content-body">
+                        <div class="loan-section-table">
+                            <div class="d-flex justify-content-end">
+                                <div class="col-lg-3 col-sm-12 ">
+                                    <form class="search-table-form">
+                                        <div>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
                                         </div>
-                                        <div class="chat-item is-me">
-                                            <time class="chat-time">10:57</time>
-                                            <p class="chat-message">Yo! Send it to my assistant and we'll review it
-                                                during the year.</p>
-                                        </div>
-                                        <div class="chat-item is-you">
-                                            <time class="chat-time">11:30</time>
-                                            <p class="chat-message">But Mark...</p>
-                                        </div>
-                                        <form class="chat-form">
-                                            <input class="chat-form-input" type="text"
-                                                placeholder="Enter your message" /> <a href="#" class="audio-btn"><i class="fa-solid fa-microphone"></i></a> <a class="send-button" href=""><i class="fa-solid fa-paper-plane"></i></a>
-                                        </form>
-                                    </div>
+                                        <input class="input" placeholder="Search for product" required="" type="text">
+                                        <button class="reset" type="reset">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </form>
                                 </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-td-middle table-card">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Admin Name</th>
+                                            <th style="width: 217px;">Status</th>
+                                            <th>Comment</th>
+                                            <th>Remarks</th>
+                                            <th>Submit</th>
+    
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6/26/2023 1:49:50 PM </td>
+                                            <td> Jignesh Patel </td>
+                                            <td><span class="all-btn Process-btn">In Process</span></td>
+                                            <td>GST Certificate not found</td>
+                                            <td><input type="text" class="" /></td>
+                                            <td> <button class="table-btn">Sumbit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6/26/2023 1:49:50 PM </td>
+                                            <td> Jignesh Patel </td>
+                                            <td><span class="all-btn Process-btn">In Process</span></td>
+                                            <td>GST Certificate not found</td>
+                                            <td><input type="text" /></td>
+                                            <td> <button>Sumbit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6/26/2023 1:49:50 PM </td>
+                                            <td> Jignesh Patel </td>
+                                            <td><span class="all-btn Process-btn">In Process</span></td>
+                                            <td>GST Certificate not found</td>
+                                            <td><input type="text" /></td>
+                                            <td> <button>Sumbit</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-end">
+                                <div class="pagination">
+                                    <a href="#">&laquo;</a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">&raquo;</a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <!-- model -->
