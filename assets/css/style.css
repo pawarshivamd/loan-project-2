@@ -84,6 +84,10 @@ html {
   background-color: #ff4500;
 }
 
+.Re-Active-btn {
+  background-color: #820bbf;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -463,7 +467,32 @@ button {
   color: rgba(0, 0, 0, 0.64);
 }
 .loan-content-body .loan-section-table .table tbody tr td input {
-  border: none;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 10px;
+  box-shadow: 0 7px 10px -7px #ddd9d9;
+}
+.loan-content-body .loan-section-table .table tbody tr td input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 1px solid var(--theam-color);
+}
+.loan-content-body .loan-section-table .table tbody tr td .table-btn {
+  color: white;
+  border: 1px solid var(--theam-color);
+  border-radius: 30px;
+  background-color: var(--theam-color);
+  margin-bottom: 20px;
+  width: 75px;
+  padding: 2px 0px !important;
+  transition: all 0.3s;
+  margin-bottom: 0;
+  height: 35px;
+}
+.loan-content-body .loan-section-table .table tbody tr td .table-btn:hover {
+  background-color: transparent;
+  color: var(--black);
+  box-shadow: none;
 }
 .loan-content-body .invite-section .input-box {
   display: flex;
@@ -501,7 +530,7 @@ button {
   margin-top: 20px;
 }
 .profile-page-section .nav-link {
-  font-size: 1.3rem;
+  font-size: 16px;
 }
 .profile-page-section .form {
   width: min(100% - 20px, 80%);
