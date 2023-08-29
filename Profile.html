@@ -138,89 +138,175 @@
                 </div>
                 <div class="tab-content" id="nav-tabContent">
 
-                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
-                        aria-labelledby="nav-profile-b-tab" tabindex="0">
-                        <form action="" class="form">
-
-                            <div class="col-2 mx-auto mb-2">
-                                <img src="assets/img/user.png" alt="">
-                            </div>
+                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-b-tab"
+                        tabindex="0">
+                        <form action="#" class="form">
+                            <!-- <div class="col-1 mx-auto mb-2"><img src="assets/img/user.png" alt=""></div> -->
+                            <h4 class="mt-2 theme-color">Basic Details</h4>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" id="first-name" name="first-name" value="Jignesh Patel" required>
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
+                                    <label for="first-name"> Name</label>
+                                    <input name="firstName" type="text" disabled="" placeholder="Jignesh Patel" value="">
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
                                     <label for="email">E-mail</label>
-                                    <input type="email" id="email" name="email" value="jigneshp123@gmail.com" required>
+                                    <input name="email" type="email" disabled="" placeholder="jigneshpatel103@gmail.com" value="">
+                                    </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
+                                    <label for="phone">Contact No</label>
+                                    <div class="mobile-number-input">
+                                        <img src="assets/img/india.png" class="indiaFlag">
+                                        <span  class="country-code">+91</span>
+                                        <input name="phoneNumber" type="text" disabled="" placeholder="9325647845" value="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
+                                
+                                <h4 class="mt-4 theme-color">Address </h4>
                                 <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="number" id="phone" name="phone" value="9237781246" required>
+                                    <label for="address"> Address Line 1 </label>
+                                    <input name="addressLine1" type="text" placeholder="Address Line 1" value="" />
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
-                                    <label for="bdate">Birthday Date</label>
-                                    <input type="date" id="bdate" name="begin" placeholder="06-08-2002"
-                                        value="06-08-2002" min="1997-01-01" max="2030-12-31">
+                                    <label for="address-2"> Address Line 2 </label>
+                                    <input name="addressLine2" type="text" placeholder="Address Line 2" value="" />
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
+                                    <label for="phone">City</label>
+                                    <input name="city" type="text" placeholder=" Enter City" value="" />
+                                    </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
+                                    <label for="phone">State</label>
+                                    <select  class="selectDrop form-select">
+                                        <option disabled="" value="" selected>Select State</option>
+                                        <option value="1">ANDHRA PRADESH</option>
+                                        <option value="2">ASSAM</option>
+                                        <option value="3">ARUNACHAL PRADESH</option>
+                                        <option value="4">GUJRAT</option>
+                                        <option value="5">BIHAR</option>
+                                        <option value="6">HARYANA</option>
+                                        <option value="7">HIMACHAL PRADESH</option>
+                                        <option value="8">JAMMU &amp; KASHMIR</option>
+                                        <option value="9">KARNATAKA</option>
+                                        <option value="10">KERALA</option>
+                                        <option value="11">MADHYA PRADESH</option>
+                                        <option value="12">MAHARASHTRA</option>
+                                        <option value="13">Telangana</option>
+                                        <option value="14">MANIPUR</option>
+                                        <option value="15">MEGHALAYA</option>
+                                        <option value="16">MIZORAM</option>
+                                        <option value="17">NAGALAND</option>
+                                        <option value="18">ORISSA</option>
+                                        <option value="19">PUNJAB</option>
+                                        <option value="20">RAJASTHAN</option>
+                                        <option value="21">SIKKIM</option>
+                                        <option value="22">TAMIL NADU</option>
+                                        <option value="23">TRIPURA</option>
+                                        <option value="24">UTTAR PRADESH</option>
+                                        <option value="25">WEST BENGAL</option>
+                                        <option value="26">GOA</option>
+                                        <option value="27">PONDICHERY</option>
+                                        <option value="28">LAKSHDWEEP</option>
+                                        <option value="29">DAMAN &amp; DIU</option>
+                                        <option value="30">DADRA &amp; NAGAR</option>
+                                        <option value="31">CHANDIGARH</option>
+                                        <option value="32">ANDAMAN &amp; NICOBAR</option>
+                                        <option value="33">UTTARANCHAL</option>
+                                        <option value="34">JHARKHAND</option>
+                                        <option value="35">CHATTISGARH</option>
+                                        <option value="36">ASSAM</option>
+                                        <option value="37">ANDHRA PRADESH</option>
+                                        <option value="38">ASSAM</option>
+                                        <option value="39">ARUNACHAL PRADESH</option>
+                                        <option value="40">GUJRAT</option>
+                                        <option value="41">BIHAR</option>
+                                        <option value="42">HARYANA</option>
+                                        <option value="43">HIMACHAL PRADESH</option>
+                                        <option value="44">JAMMU &amp; KASHMIR</option>
+                                        <option value="45">KARNATAKA</option>
+                                        <option value="46">KERALA</option>
+                                        <option value="47">MADHYA PRADESH</option>
+                                        <option value="48">MAHARASHTRA</option>
+                                        <option value="49">Telangana</option>
+                                        <option value="50">MANIPUR</option>
+                                        <option value="51">MEGHALAYA</option>
+                                        <option value="52">MIZORAM</option>
+                                        <option value="53">NAGALAND</option>
+                                        <option value="54">ORISSA</option>
+                                        <option value="55">PUNJAB</option>
+                                        <option value="56">RAJASTHAN</option>
+                                        <option value="57">SIKKIM</option>
+                                        <option value="58">TAMIL NADU</option>
+                                        <option value="59">TRIPURA</option>
+                                        <option value="60">UTTAR PRADESH</option>
+                                        <option value="61">WEST BENGAL</option>
+                                        <option value="62">GOA</option>
+                                        <option value="63">PONDICHERY</option>
+                                        <option value="64">LAKSHDWEEP</option>
+                                        <option value="65">DAMAN &amp; DIU</option>
+                                        <option value="66">DADRA &amp; NAGAR</option>
+                                        <option value="67">CHANDIGARH</option>
+                                        <option value="68">ANDAMAN &amp; NICOBAR</option>
+                                        <option value="69">UTTARANCHAL</option>
+                                        <option value="70">JHARKHAND</option>
+                                        <option value="71">CHATTISGARH</option>
+                                        <option value="72">ASSAM</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
+                                    <label for="phone">Zip/Postal Code</label>
+                                    <input name="zipCode" type="number" placeholder=" Enter Zipcode" value="" />
+                                    <!-- <div class="error">Zip Code is required</div> -->
                                 </div>
                             </div>
-                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 m-basics">
-                        <p>Address:</p>
-                        <label for="address">Street Address Line 1 :</label>
-                        <textarea id="address" name="address" rows="1"></textarea>
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-sm-12 m-basics">
-                        <label for="address-2">Street Address Line 2 :</label>
-                        <textarea id="address-2" name="address-2" rows="1"></textarea>
-                      </div> -->
-                            <div class="btn-section">
-                                <button class="profile-btn">Save</button>
-                            </div>
+                            <div class="btn-section"><button type="submit" class="profile-btn me-3">Save</button><a
+                                    href="/userDashBoard"><button class="profile-btn">Cancel</button></a></div>
                         </form>
                     </div>
                     <!-- 2 -->
                     <div class="tab-pane fade kyc-details" id="nav-kyc" role="tabpanel" aria-labelledby="nav-kyc-tab"
                         tabindex="0">
                         <form action="" class="form ">
+                            <h4 class="mt-2 theme-color">Document Details</h4>
                             <div class="row">
 
                                 <!-- 1 -->
+
                                 <div class="my-4 col-lg-6 col-md-6 col-sm-12">
-                                    <h4>PAN Card</h4>
-                                    <div class="input-box ">
-                                        <input type="file" class="upload-box" name='files[]' multiple>
+                                    <h4 class="title">Upload Aadhaar <small class="small-aadhaar">(Front)</small> </h4>
+                                    <div class="input-box">
+                                        <input type="file" class="upload-box" name='files[]' multiple />
                                         <i class="fa-solid fa-xmark"></i>
                                     </div>
                                 </div>
-                                <!-- 2 -->
+                                    <!-- 2 -->
                                 <div class="my-4 col-lg-6 col-md-6 col-sm-12">
-                                    <h4>Aadhaar Upload- Front Side</h4>
+                                    <h4 class="title">Upload Aadhaar <small class="small-aadhaar">(Back)</small> </h4>
                                     <div class="input-box">
-                                        <input type="file" class="upload-box" name='files[]' multiple>
+                                        <input type="file" class="upload-box" name='files[]' multiple />
                                         <i class="fa-solid fa-xmark"></i>
                                     </div>
                                 </div>
                                 <!-- 3 -->
                                 <div class="my-4 col-lg-6 col-md-6 col-sm-12">
-                                    <h4>Aadhaar Upload- Back Side</h4>
-                                    <div class="input-box">
+                                    <h4 class="title">PAN Card</h4>
+                                    <div class="input-box ">
                                         <input type="file" class="upload-box" name='files[]' multiple>
                                         <i class="fa-solid fa-xmark"></i>
                                     </div>
                                 </div>
                             </div>
+
+                            <h4 class="mt-4 theme-color">Bank Details</h4>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
                                     <label for="bank-name">Bank Name</label>
                                     <input type="text" id="bank-name" name="bank-name" value="HDFC Bank" required>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
                                     <label for="ac-number">Account Number</label>
                                     <input type="number" id="ac-number" name="ac-number" required>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+                                <div class="col-lg-4 col-md-6 col-sm-12 m-basics">
                                     <label for="IFSC">IFSC Code</label>
                                     <input type="text" id="IFSC" name="IFSC" value="" required>
                                 </div>
