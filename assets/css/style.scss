@@ -129,7 +129,7 @@ button {
     align-items: center;
     padding: 10px 5px;
     border: 1px solid var(--theam-color);
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: transparent;
 }
 
@@ -701,7 +701,7 @@ button {
             border: 1px solid lightgray;
             border-radius: 3px;
             padding: 8px 5px;
-            box-shadow: 0 7px 10px -7px #b4b2b2;
+            // box-shadow: 0 7px 10px -7px #b4b2b2;
 
             &:focus {
                 outline: 1px solid var(--theam-color);
@@ -713,7 +713,7 @@ button {
             border: 1px solid lightgray;
             border-radius: 3px;
             padding: 8px 5px;
-            box-shadow: 0 7px 10px -7px #b4b2b2;
+            // box-shadow: 0 7px 10px -7px #b4b2b2;
 
             &:focus {
                 box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -727,7 +727,7 @@ button {
             border: 1px solid lightgray;
             border-radius: 3px;
             padding: 8px 10px;
-            box-shadow: 0 7px 10px -7px #ddd9d9;
+            // box-shadow: 0 7px 10px -7px #ddd9d9;
 
             &:focus {
                 // box-shadow: 7px 00px 10px rgba(26,77,190,.2);
@@ -764,20 +764,14 @@ button {
             font-size: 1.3rem;
         }
         .input-box {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid var(--light-gray) !important;
-            border-radius: 50px;
             background-color: white;
-            box-shadow: 0 12px 24px rgba(47, 65, 129, .1);
-
-            &:hover {
-                border: 1px solid var(--theam-color);
-            }
-
-            i {
-                margin-right: 20px;
+            .uplod-btn{
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -788,10 +782,10 @@ button {
             border: none;
 
             &::-webkit-file-upload-button {
-                padding: 10px;
-                color: white;
-                background-color: var(--theam-color);
-                border-radius: 50px;
+                padding: 7px 6px;
+                color: var(--white);
+                background-color: #808080;
+                // border-radius: 50px;
                 width: 120px;
                 // box-shadow: 1px 0 1px 1px #6b4559;
                 outline: none !important;
